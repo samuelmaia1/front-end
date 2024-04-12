@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/formularios/css/style.css">
+</head>
+<body>
+    <h2>Formulários HTML</h2>
+    <!-- Primeiro formulário-->
+    <!-- Atributos da tag form-->
+    <form action="register.php" method="POST">
+        <div>
+            <label>Nome: </label>
+            <input type="text">
+        </div>
+    <!-- Atributo Name-->
+        <div>
+            <!-- Atributo for-->
+            <label for="age">Idade: </label>
+            <input type="text" name="age">
+        </div>
+    <!-- Select-->
+        <div>
+            <label for="job">Selecione a sua profissão: </label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+    <!-- Selected-->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="nao" selected>Não</option>
+                <option value="sim">Sim</option>
+            </select>
+        </div>
+    <!-- Múltiplas opções-->
+        <div>
+            <label for="items">Selecione os itens desejados: </label>
+            <select name="items" multiple>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="macarrao">Macarrão</option>
+                <option value="carne">Carne</option>
+            </select>
+        </div>
+    <!-- Textarea-->
+        <div>
+            <label for="comment">Comentário: </label>
+            <textarea name="comment" cols="30" rows="10"></textarea>
+        </div>
+    <!-- Fieldset e legend-->
+        <div>
+            <fieldset>
+                <legend>Preencha os campos: </legend>
+                <label for="firstname">Nome: </label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome: </label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+    <!-- Datalist-->
+        <div>
+            <label for="sabor">Escolha o sabor: </label>
+            <input type="text" list="sabores" name="sabor">
+
+            <datalist id="sabores">
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Chocolate"></option>
+                <option value="Flocos"></option>
+            </datalist>
+        </div>
+    <!-- Password -->
+    <div>
+        <label for="password">Digite sua senha: </label>
+        <input type="password" name="password">
+    </div>
+    <!-- Envio de form-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Criando formulários em HTML</h2>
+    <form action="teste.cs" method="post">
+        <!--Input para inserir dados de texto-->
+        <div>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="nome">
+        </div>
+        <div>
+            <label for="profissao">Selecione sua profissão: </label>
+            <select name="profissao">
+                <option value="programador">Programador</option>
+                <option value="analista" selected>Analista</option>
+                <option value="engenheiro_de_software">Engenheiro de software</option>
+            </select>
+        </div>
+        <div>
+            <label for="items">Selecione os itens desejados: </label>
+            <select name="items" muLtiple>
+                <option value="mouse">Mouse</option>
+                <option value="teclado">Teclado</option>
+                <option value="monitor">Monitor</option>
+                <option value="fone">Fone</option>
+            </select>
+        </div>
+        <div>
+            <label for="caixatexto">Escreva um comentário: </label>
+            <textarea name="caixatexto" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Preencha os campos abaixo: </legend>
+                <label for="name">Nome: </label>
+                <input type="text" name="name">
+                <label for="lastname">Sobrenome: </label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+        <div>
+            <label for="sabor">Escolha um sabor: </label>
+            <input type="text" name="sabor" list="sabores">
+            <datalist id="sabores">
+                <option value="Morango"></option>
+                <option value="Cereja"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="senha">Informe sua senha: </label>
+            <input type="password" name="senha">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
