@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms</title>
     <link rel="stylesheet" href="/formularios/css/style.css">
 </head>
 <body>
     <h2>Formulários HTML</h2>
     <!-- Primeiro formulário-->
     <!-- Atributos da tag form-->
-    <form action="register.php" method="POST">
+    <form action="register.php" method="POST" class="forms">
         <div>
             <label>Nome: </label>
             <input type="text">
@@ -76,11 +76,13 @@
             </datalist>
         </div>
     <!-- Password -->
-    <div>
-        <label for="password">Digite sua senha: </label>
-        <input type="password" name="password">
-    </div>
-    <!-- Envio de form-->
+        <div>
+            <label for="password">Digite sua senha: </label>
+            <input type="password" name="password">
+        </div>
+        <!-- Resetar formulário -->
+        <input type="reset" value="Limpar">
+        <!-- Envio de form-->
         <input type="submit" value="Enviar">
     </form>
 </body>
