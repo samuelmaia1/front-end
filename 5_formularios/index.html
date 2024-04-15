@@ -80,9 +80,61 @@
             <label for="password">Digite sua senha: </label>
             <input type="password" name="password">
         </div>
-        <!-- Resetar formulário -->
+    <!-- Resetar formulário -->
         <input type="reset" value="Limpar">
-        <!-- Envio de form-->
+    <!-- Input radio -->
+        <div>
+            <label for="carmodel">Escolha o modelo do seu carro </label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="carmodel">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="carmodel">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="renault" name="carmodel">
+                <label for="renault">Renault</label>
+            </div>
+        </div>
+    <!-- Checkbox-->
+        <div>
+            <label for="opcoes">Selecione suas opções de carro: </label>
+            <div class="radio">
+                <input type="checkbox" name="opcoes[]" value="sedan">
+                <label for="sedan">Sedan</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opcoes[]" value="hatch">
+                <label for="hatch">Hatch</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opcoes[]" value="suv">
+                <label for="suv">SUV</label>
+            </div>
+        </div>
+    <!-- Datas -->
+        <div>
+            <label for="aniversario">Data de nascimento: </label>
+            <input type="date" name="aniversario">
+        </div>
+    <!-- Input de arquivos -->
+        <div>
+            <label for="imagem">Insira sua imagem</label>
+            <input type="file" name="imagem">
+        </div>
+    <!-- Emails -->
+        <div>
+            <label for="email">Insira seu e-mail</label>
+            <input type="email" name="email" placeholder="example@mail.com" required>
+        </div>
+    <!-- Disable -->
+        <div>
+            <p>Tente mudar o valor</p>
+            <input type="text" disabled>
+        </div>
+    <!-- Envio de form-->
         <input type="submit" value="Enviar">
     </form>
 </body>
